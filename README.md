@@ -7,7 +7,7 @@ Turns issues into links in did output. Will be obsolete if [psss/did#164](https:
 1. A working [did](https://github.com/psss/did) install
 2. Slack set to [parse mark~~down~~up by default](https://slack.com/intl/en-gb/help/articles/360039953113-Set-your-message-formatting-preference)
 
-## Usage
+## Usage
 
 By default it will format the output of `did today`:
 
