@@ -1,0 +1,25 @@
+{
+  "name": "status-update",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/achingbrain/status-update#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achingbrain/status-update.git"
+  },
+  "bugs": {
+    "url": "https://github.com/achingbrain/status-update/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "status-update": "./src/index.js"
+  },
+  "author": "Alex Potsides <alex@achingbrain.net>",
+  "license": "MIT",
+  "dependencies": {
+    "execa": "^6.1.0"
+  }
+}
