@@ -23,12 +23,16 @@ console.info(
   .substring(res.stdout.indexOf('*'))
   .split('\n')
   .map(line => {
-    if (!line.startsWith('    * ')) {
+    if (!line.startsWith('    * ') || !line.includes('#')) {
       return line
     }
 
     const [title, ...rest] = line.split(' - ')
     const [repo, issue] = title.substring(6).split('#')
+
+    if (issue == null) {
+      return line
+    }
 
     return `    * [${repo}#${issue}](https://github.com/${repo}/issues/${issue}) - ${rest.join(' - ')}`
   })
