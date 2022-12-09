@@ -16,7 +16,7 @@ if (!args.includes('--width')) {
 
 const res = await execa('did', args)
 
-console.info('Status Update:')
+console.info('*Status Update*')
 console.info('')
 console.info(
   res.stdout
@@ -34,7 +34,7 @@ console.info(
       return line
     }
 
-    return `    * [${repo}#${issue}](https://github.com/${repo}/issues/${issue}) - ${rest.join(' - ')}`
+    return `    * ${rest.join(' - ')} - [${repo}#${issue}](https://github.com/${repo}/issues/${issue})`
   })
   .join('\n')
 )
